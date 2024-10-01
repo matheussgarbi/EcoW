@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoW Calculator</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<!-- cabeçalho do site -->
+  <header>
+
+    <img src="img/" alt="Logo EcoW Calculator">
+    <h1>EcoW Calculator</h1>
+    <nav>
+      <ul>             
+        <li><a href="">Serviços que recomendamos</a></li>
+        <li><a href="">Nossos colaboradores</a></li>
+        <li> <a href="" class="botao-destaque">Crie sua conta gratuita</a> 
+      </ul>
+    </nav>
+
+    <section class="hero">
+        <h2>Calculadora de carbono gratuita para empresas</h2>
+        <p>Calcule em 5 minutos a pegada e carbono da sua empresa e quanto custa para ser carbono neutro</p>
+      </section>  
+    
+  </header> 
+<!-- cabeçalho do site -->
+    
+<!-- texto acima do formulario-->
+  <section class="biograph-container">
+    <h2 class="bold">Quem Somos Nós?</h2>
+    <p>Somos uma empresa comprometida em mitigar os impactos negativos do desenvolvimento tecnológico no meio ambiente. Reconhecemos que, embora a tecnologia avance a humanidade, ela também pode levar à saturação ecossistêmica, poluição e mudanças climáticas. Nosso objetivo é oferecer soluções sustentáveis que equilibram a inovação tecnológica com a preservação ambiental.</p>
+    </section>
+<!-- texto acima do formulario-->
+
+<!-- formulario que será a calculadora -->
+    <section class="biograph-container">
+    <h2 class="bold">Nossa Pegada de Carbono Zero com Parceria e ESG com a Honda</h2>
+       <div class="wrapper">
+        <h1>texto</h1>
+        <form action="#" method="POST">
+            <label for="nome_anuncio">Nome (completo):</label>
+            <input type="text" id="nome_anuncio" name="nome_anuncio" required><br>
+			
+			<label for="data_compra">Idade:</label>
+            <input type="date" id="data_compra" name="data_compra"><br>
+           
+		   <label for="preco">E-mail:</label>
+            <input type="text" id="preco" name="preco" onkeyup="formatarMoeda(R$)" required><br>  
+			
+			 <label for="rating">Avaliação:</label>
+            <div class="stars">
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5" title="5 estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4" title="4 estrelas">&#9733;&#9733;&#9733;&#9733;&#9734;</label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3" title="3 estrelas">&#9733;&#9733;&#9733;&#9734;&#9734;</label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2" title="2 estrelas">&#9733;&#9733;&#9734;&#9734;&#9734;</label>
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1" title="1 estrela">&#9733;&#9734;&#9734;&#9734;&#9734;</label>
+            </div><br>
+			
+            <label for="opcionais"></label><br>
+            <input type="checkbox" id="ar_condicionado" name="opcionais" value="ar_condicionado">
+            <label for="ar_condicionado">Aceito receber comunicações da GreenEcoDrive - Consultoria ESG e Carbono Zero.</label><br>
+            
+            <input type="checkbox" id="vidro_eletrico" name="opcionais" value="vidro_eletrico">
+            <label for="vidro_eletrico">Estou de acordo com as <b><u>Políticas de Privcacidade</u></b> deste website</label><br>
+
+            <input type="checkbox" id="direcao_hidraulica" name="opcionais" value="direcao_hidraulica">
+            <label for="direcao_hidraulica">Não usar suas informaões de contato para envio de spam </label><br>
+			
+            <input type="submit" value="Próxima">
+        </form>       
+    </div>
+<!-- formulario que será a calculadora -->
+
+    </section>
+
+<!-- rodape do site -->
+    <footer>
+      <p>EcoW Calculator &copy; 2024</p>
+    </footer>
+  
+    <script src="js/"></script>
+  </body>
+<!-- rodape do site -->
+
+  </html>
