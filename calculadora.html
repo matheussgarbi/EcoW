@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoW Culator</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<!-- cabeçalho do site -->
+  <header>
+
+    <img src="img/logo.PNG" alt="Logo EcoW Calculator">
+    <h1>EcoW Culator</h1>
+    <nav>
+      <ul>             
+        <li><a href="file:///C:/Users/User/Desktop/trabalhos%20facul/site%20calculadora/cont.html">Quem Somos Nós?</a></li>
+        <li> <a href="file:///C:/Users/User/Desktop/trabalhos%20facul/site%20calculadora/site.html" class="botao-destaque">Home</a> 
+      </ul>
+    </nav>
+
+<!-- formulario que estará a calculadora -->
+<section class="biograph-container">
+  <h2 class="bold">Nossa Pegada de Carbono Zero com Parceria e ESG com a Honda</h2>
+  <div class="wrapper">
+      <h1>Formulário de Pegada de Carbono</h1>
+      <form action="#" method="POST">
+          
+          <!-- Tópico: Consumo de Combustível -->
+          <h3>Consumo de Combustível</h3>
+          
+          <label for="automoveis">Quantos automóveis você possui?</label><br>
+          <select id="automoveis" name="automoveis[]" multiple>
+              <option value="moto_500cc">Moto até 500cc</option>
+              <option value="moto_990cc">Moto de 501cc até 990cc</option>
+              <option value="moto_1199cc">Moto de 991cc até 1199cc</option>
+              <option value="carro_pequeno">Carro pequeno</option>
+              <option value="carro_medio">Carro médio</option>
+              <option value="carro_grande">Carro grande</option>
+              <option value="veiculos_pesados">Veículos pesados</option>
+          </select><br>
+
+          <label for="combustivel">Consumo de combustível (em litros por mês):</label><br>
+          <label for="gasolina">Gasolina:</label>
+          <input type="number" id="gasolina" name="combustivel_gasolina" step="0.01"><br>
+          
+          <label for="etanol">Etanol:</label>
+          <input type="number" id="etanol" name="combustivel_etanol" step="0.01"><br>
+          
+          <label for="diesel">Diesel:</label>
+          <input type="number" id="diesel" name="combustivel_diesel" step="0.01"><br>
+          
+          <label for="gnv">GNV:</label>
+          <input type="number" id="gnv" name="combustivel_gnv" step="0.01"><br>
+
+          <!-- Tópico: Consumo de Energia Elétrica e Gás -->
+          <h3>Consumo de Energia Elétrica e Gás</h3>
+          
+          <label for="energia">Consumo de energia elétrica (kWh/mês):</label>
+          <input type="number" id="energia" name="energia" step="0.01"><br>
+
+          <label for="gas">Consumo de gás (m³/mês):</label>
+          <input type="number" id="gas" name="gas" step="0.01"><br>
+
+          <!-- Tópico: Consumo de Alimentos -->
+          <h3>Consumo de Alimentos (Carnes, Leite e Ovos)</h3>
+          
+          <label for="carne_bovina">Consumo de carne bovina (kg/mês):</label>
+          <input type="number" id="carne_bovina" name="carne_bovina" step="0.01"><br>
+
+          <label for="carne_suina">Consumo de carne suína (kg/mês):</label>
+          <input type="number" id="carne_suina" name="carne_suina" step="0.01"><br>
+
+          <label for="frango">Consumo de carne de frango (kg/mês):</label>
+          <input type="number" id="frango" name="frango" step="0.01"><br>
+
+          <label for="leite">Consumo de leite (L/mês):</label>
+          <input type="number" id="leite" name="leite" step="0.01"><br>
+
+          <label for="ovos">Consumo de ovos (unidades/mês):</label>
+          <input type="number" id="ovos" name="ovos"><br>
+
+          <!-- Tópico: Fazendo o Bem -->
+          <h3>Fazendo o Bem</h3>
+          
+          <label for="arvores">Quantas árvores você plantou no último mês?</label>
+          <input type="number" id="arvores" name="arvores" step="1"><br>
+
+          <label for="reciclagem">Você recicla lixo?</label>
+          <select id="reciclagem" name="reciclagem">
+              <option value="sim">Sim</option>
+              <option value="nao">Não</option>
+          </select><br>
+
+          <label for="composto">Você separa o composto orgânico?</label>
+          <select id="composto" name="composto">
+              <option value="sim">Sim</option>
+              <option value="nao">Não</option>
+          </select><br>
+			
+			 <label for="rating">Avaliação:</label>
+            <div class="stars">
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5" title="5 estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4" title="4 estrelas">&#9733;&#9733;&#9733;&#9733;&#9734;</label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3" title="3 estrelas">&#9733;&#9733;&#9733;&#9734;&#9734;</label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2" title="2 estrelas">&#9733;&#9733;&#9734;&#9734;&#9734;</label>
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1" title="1 estrela">&#9733;&#9734;&#9734;&#9734;&#9734;</label>
+            </div><br>
+			
+            <label for="opcionais"></label><br>
+            <input type="checkbox" id="ar_condicionado" name="opcionais" value="ar_condicionado">
+            <label for="ar_condicionado">Aceito receber comunicações da GreenEcoDrive - Consultoria ESG e Carbono Zero.</label><br>
+            
+            <input type="checkbox" id="vidro_eletrico" name="opcionais" value="vidro_eletrico">
+            <label for="vidro_eletrico">Estou de acordo com as <b><u>Políticas de Privcacidade</u></b> deste website</label><br>
+
+            <input type="checkbox" id="direcao_hidraulica" name="opcionais" value="direcao_hidraulica">
+            <label for="direcao_hidraulica">Não usar suas informaões de contato para envio de spam </label><br>
+			
+            <input type="submit" value="Resultado">
+        </form>       
+    </div>
+<!-- formulario que estará a calculadora -->
+
+<footer>
+    <p>EcoW Culator &copy; 2024</p>
+  </footer>
+
+  <script src="js/"></script>
+</body>
+<!-- rodape do site -->
+
+</html>
