@@ -45,10 +45,20 @@ def calcular_carbono(consumo):
 
     return total_emissao
 
-# Rota principal que exibe o formulário
-@app.route('/caminho do site')
+# Rota principal que exibe o site
+@app.route('/')
 def index():
-    return render_template('calculadora.html')
+    return render_template('site.html')  # Página principal (Home)
+
+# Rota para exibir o formulário da calculadora
+@app.route('/calculadora')
+def calculadora():
+    return render_template('calculadora.html')  # Página da calculadora
+
+# Rota para exibir a página de contatos
+@app.route('/contatos')
+def contatos():
+    return render_template('cont.html')  # Página de contatos
 
 # Rota para processar o formulário e calcular a pegada de carbono
 @app.route('/calcular', methods=['POST'])
